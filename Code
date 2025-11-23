@@ -1,0 +1,263 @@
+def get_budget_level(budget_option):
+    if budget_option == 1 or budget_option == 2:
+        return "low"
+    elif budget_option == 3 or budget_option == 4:
+        return "medium"
+    elif budget_option == 5 or budget_option == 6:
+        return "high"
+    else:
+        return "low"
+
+
+def recommend_clothes(occasion_option, body_shape_option, style_option):
+    if style_option == 1:  # Indian
+        if occasion_option == 1:  # Casual
+            if body_shape_option == 1:
+                return "Kurti with straight palazzo pants"
+            elif body_shape_option == 2:
+                return "Anarkali top with churidar leggings"
+            elif body_shape_option == 3:
+                return "Fitted kurta with sharara pants"
+            elif body_shape_option == 4:
+                return "Empire-line kurta with churidar"
+            else:
+                return "Cotton kurta with jeans or leggings"
+        elif occasion_option == 2 or occasion_option == 3:  # Office or College
+            if body_shape_option == 1:
+                return "Cotton shirt with straight trousers or tailored kurta with ankle pants"
+            elif body_shape_option == 2:
+                return "Panelled kurti with cigarette pants"
+            elif body_shape_option == 3:
+                return "Fitted kurta with straight pants or saree with minimal draping"
+            elif body_shape_option == 4:
+                return "Long kurta with straight pants to elongate torso"
+            else:
+                return "Simple kurta with palazzo pants"
+        elif occasion_option == 4:  # Party
+            if body_shape_option == 1:
+                return "Dhoti style saree or lehenga with flared skirt"
+            elif body_shape_option == 2:
+                return "Embroidered saree or Anarkali gown"
+            elif body_shape_option == 3:
+                return "Body-hugging saree or fitted lehenga choli"
+            elif body_shape_option == 4:
+                return "Layered lehenga or flowing anarkali"
+            else:
+                return "Bright colored saree or designer lehenga"
+        elif occasion_option == 5:  # Wedding
+            if body_shape_option == 1:
+                return "Heavy embroidered lehenga with embellished blouse"
+            elif body_shape_option == 2:
+                return "Designer saree with temple jewelry"
+            elif body_shape_option == 3:
+                return "Banarasi or Kanjeevaram saree with zari work"
+            elif body_shape_option == 4:
+                return "Richly embroidered gown or saree with long dupatta"
+            else:
+                return "Traditional saree or lehenga with dupatta"
+        else:
+            return "Simple kurta with palazzo pants"
+    elif style_option == 2:  # Western
+        if occasion_option == 1:  # Casual
+            if body_shape_option == 1:
+                return "A-line top with dark straight-fit jeans"
+            elif body_shape_option == 2:
+                return "Peplum top with relaxed-fit jeans"
+            elif body_shape_option == 3:
+                return "Fitted t-shirt with high-waist jeans"
+            elif body_shape_option == 4:
+                return "V-neck blouse with straight jeans"
+            else:
+                return "Comfortable t-shirt with jeans"
+        elif occasion_option == 2 or occasion_option == 3:  # Office or College
+            if body_shape_option == 1:
+                return "Structured blazer with straight trousers and a simple blouse"
+            elif body_shape_option == 2:
+                return "Cinched-waist blazer with tapered trousers"
+            elif body_shape_option == 3:
+                return "Fitted shirt with pencil skirt or tailored trousers"
+            elif body_shape_option == 4:
+                return "Loose fit blouse with tailored pants"
+            else:
+                return "Smart shirt with formal trousers"
+        elif occasion_option == 4:  # Party
+            if body_shape_option == 1:
+                return "Fit and flare dress or cocktail dress"
+            elif body_shape_option == 2:
+                return "Wrap dress to create a defined waist"
+            elif body_shape_option == 3:
+                return "Bodycon or wrap dress"
+            elif body_shape_option == 4:
+                return "Empire waist dress"
+            else:
+                return "Simple party dress"
+        elif occasion_option == 5:  # Wedding
+            if body_shape_option == 1:
+                return "Elegant gown or designer dress"
+            elif body_shape_option == 2:
+                return "Empire-line or layered gown"
+            elif body_shape_option == 3:
+                return "Mermaid or fit-and-flare gown"
+            elif body_shape_option == 4:
+                return "Draped gowns or A-line flowy dress"
+            else:
+                return "Classic occasion-wear dress or suit"
+        else:
+            return "Comfortable outfit"
+    else:
+        return "Comfortable outfit"
+
+
+def recommend_footwear(occasion_option, budget_option, style_option):
+    if style_option == 1:  # Indian
+        if occasion_option == 1:
+            footwear = "Kolhapuri chappals or juttis"
+        elif occasion_option == 2 or occasion_option == 3:
+            footwear = "Closed-toe mojris or formal sandals"
+        elif occasion_option == 4:
+            footwear = "Embroidered heels or wedges"
+        elif occasion_option == 5:
+            footwear = "Embellished sandals or traditional juttis with zari"
+        else:
+            footwear = "Comfortable flats"
+    elif style_option == 2:  # Western
+        if occasion_option == 1:
+            footwear = "Casual sneakers or flats"
+        elif occasion_option == 2 or occasion_option == 3:
+            footwear = "Formal shoes or low heels"
+        elif occasion_option == 4:
+            footwear = "Heels, stilettos, or trendy boots"
+        elif occasion_option == 5:
+            footwear = "Elegant heels or dress shoes"
+        else:
+            footwear = "Comfortable shoes"
+    else:
+        footwear = "Basic footwear"
+
+    if budget_option == 1 or budget_option == 2:
+        price_note = "Choose affordable and durable options."
+    elif budget_option == 3 or budget_option == 4:
+        price_note = "Try mid-range brands with style and comfort."
+    else:
+        price_note = "Pick premium or branded footwear."
+
+    return f"{footwear}. {price_note}"
+
+
+def recommend_jewellery(occasion_option, budget_option, body_shape_option, style_option):
+    if style_option == 1:  # Indian
+        if occasion_option == 1:
+            jewellery = "Small studs and thin bangles"
+        elif occasion_option == 2 or occasion_option == 3:
+            jewellery = "Stud earrings and a simple chain or watch"
+        elif occasion_option == 4:
+            jewellery = "Dangling earrings, statement ring, and kadas (bracelets)"
+        elif occasion_option == 5:
+            jewellery = "Gold or kundan necklace set, jhumkas, bangles and rings"
+        else:
+            jewellery = "Small studs"
+    elif style_option == 2:  # Western
+        if occasion_option == 1:
+            jewellery = "Small studs and a simple bracelet"
+        elif occasion_option == 2 or occasion_option == 3:
+            jewellery = "Minimal studs, a watch, and a delicate chain"
+        elif occasion_option == 4:
+            jewellery = "Statement earrings or layered necklace"
+        elif occasion_option == 5:
+            jewellery = "Coordinated necklace, earrings, and bangles/bracelet set"
+        else:
+            jewellery = "Stud earrings"
+    else:
+        jewellery = "Basic jewellery"
+
+    if body_shape_option == 1:
+        shape_note = "Emphasize earrings and neckpieces to draw attention upward."
+    elif body_shape_option == 2:
+        shape_note = "Layered pieces can add more visual interest."
+    elif body_shape_option == 3:
+        shape_note = "Balanced bold and delicate pieces complement your shape."
+    elif body_shape_option == 4:
+        shape_note = "Choose jewellery to elongate neckline."
+    else:
+        shape_note = "Choose pieces matching your neckline and outfit colors."
+
+    if budget_option == 1 or budget_option == 2:
+        price_note = "Opt for artificial or fashion jewellery."
+    elif budget_option == 3 or budget_option == 4:
+        price_note = "Mix costume jewellery with classic pieces."
+    else:
+        price_note = "Choose premium or designer jewellery."
+
+    return f"{jewellery}. {shape_note} {price_note}"
+
+
+def recommend_bag(occasion_option, budget_option, style_option):
+    if style_option == 1:  # Indian
+        if occasion_option == 1:
+            bag = "Simple sling bag or potli bag"
+        elif occasion_option == 2 or occasion_option == 3:
+            bag = "Leather tote or crossbody bag"
+        elif occasion_option == 4:
+            bag = "Elegant clutch or embroidered potli"
+        elif occasion_option == 5:
+            bag = "Decorative embellished potli or clutch with ethnic designs"
+        else:
+            bag = "Simple sling bag"
+    elif style_option == 2:  # Western
+        if occasion_option == 1:
+            bag = "Small backpack or crossbody bag"
+        elif occasion_option == 2 or occasion_option == 3:
+            bag = "Structured tote or laptop bag"
+        elif occasion_option == 4:
+            bag = "Compact clutch or small sling bag"
+        elif occasion_option == 5:
+            bag = "Dressy clutch with subtle embellishments"
+        else:
+            bag = "Simple backpack"
+    else:
+        bag = "Basic bag"
+
+    if budget_option == 1 or budget_option == 2:
+        price_note = "Choose affordable fabric or synthetic bags."
+    elif budget_option == 3 or budget_option == 4:
+        price_note = "Look for bags with embroidery or subtle details."
+    else:
+        price_note = "Select premium or designer styles."
+
+    return f"{bag}. {price_note}"
+
+
+def main():
+    print("=== Outfit Recommender ===")
+    print("Select occasion:")
+    print("1. Casual\n2. Office\n3. College\n4. Party\n5. Wedding")
+    occasion_option = int(input("Enter occasion number: ").strip())
+
+    print("\nSelect body shape:")
+    print("1. Pear🍐 \n2. Rectangle🎴\n3. Hourglass⏳\n4. Apple🍎")
+    body_shape_option = int(input("Enter body shape number: ").strip())
+
+    print("\nSelect budget range:")
+    print("1. 500-1000\n2. 1000-2000\n3. 2000-4000\n4. 4000-7000\n5. 7000-12000\n6. >12000")
+    budget_option = int(input("Enter budget option number: ").strip())
+
+    print("\nSelect style preference:")
+    print("1. Indian\n2. Western")
+    style_option = int(input("Enter style option number: ").strip())
+
+    clothes = recommend_clothes(occasion_option, body_shape_option, style_option)
+    footwear = recommend_footwear(occasion_option, budget_option, style_option)
+    jewellery = recommend_jewellery(occasion_option, budget_option, body_shape_option, style_option)
+    bag = recommend_bag(occasion_option, budget_option, style_option)
+    budget_level = get_budget_level(budget_option)
+
+    print("\n ✨Your Recommended outfit✨ ")
+    print(f"Budget level: {budget_level.capitalize()}")
+    print(f"Clothing: {clothes}")
+    print(f"Footwear: {footwear}")
+    print(f"Jewellery: {jewellery}")
+    print(f"Bag: {bag}")
+
+
+if __name__ == "__main__":
+    main()
