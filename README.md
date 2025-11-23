@@ -27,7 +27,7 @@ git clone <your-repo-link>
 
 Navigate to the project folder:
 
-cd smart-outfit-recommender
+cd outfit-recommender-for-women
 
 (Optional) Create and activate a virtual environment.​
 
