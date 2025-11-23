@@ -1,7 +1,8 @@
 # fuzzy-octo-tribble
 Outfit Recommender for Women
+<br>
 Overview:-
-Smart Outfit Recommender is a Python-based tool that suggests outfit ideas based on the user’s budget, occasion, and body shape. The goal is to make it easier and faster for users to choose clothes that are both affordable and flattering for their body type.​
+ Outfit Recommender is a Python-based tool that suggests outfit ideas based on the user’s budget, occasion, and body shape. The goal is to make it easier and faster for users to choose clothes that are both affordable and flattering for their body type.​
 
 Features:- 
 Takes user input for budget, occasion (e.g., casual, formal, party), and body shape (e.g., pear, rectangle, hourglass).​
