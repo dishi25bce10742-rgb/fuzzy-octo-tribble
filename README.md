@@ -43,7 +43,6 @@ Test with different occasions (casual, office, wedding, party) and check that th
 
 Try multiple body shapes and confirm that recommendations change according to body-shape rules implemented in the code.​
 
-Check for invalid inputs (negative budget, empty occasion, wrong body shape option) and ensure the program handles them gracefully.​
 
 Problem Statement:-
 Many people struggle to decide what to wear for a specific occasion while staying within a fixed budget and choosing outfits that suit their body shape. This project aims to reduce decision fatigue by automatically recommending suitable outfit combinations based on user inputs.​
