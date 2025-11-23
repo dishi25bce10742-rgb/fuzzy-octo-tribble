@@ -14,7 +14,7 @@ Suggests styles that suit the selected body shape, focusing on proportions and c
 Simple command-line interface for easy use by beginners.​
 
 Technologies / Tools Used:-
-Programming language: Python 3.x.​
+Programming language: Python 3.13.5​
 
 Environment: VS Code / PyCharm / any Python IDE.​
 
@@ -23,15 +23,15 @@ Version control: Git and GitHub for repository hosting.​
 Steps to Install & Run the Project:-
 Clone the repository:
 
-git clone <your-repo-link>
+git clone https://github.com/dishi25bce10742-rgb/fuzzy-octo-tribble.git
 
 Navigate to the project folder:
 
 cd outfit-recommender-for-women
 
-(Optional) Create and activate a virtual environment.​
+ Create and activate a virtual environment.​
 
-Install required packages (if you used any, e.g., pip install -r requirements.txt).​
+Install required packages 
 
 Run the main script:
 
